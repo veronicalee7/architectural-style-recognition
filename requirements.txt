@@ -9,6 +9,7 @@ matplotlib==3.2.2
 torch==1.8.0+cpu
 torchvision==0.9.0+cpu
 starlette==0.12.0
-uvicorn==0.7.1
+uvicorn==0.18.3
 python-multipart==0.0.5
+httptools==0.4.0
 uvloop==0.15.2

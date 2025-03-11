@@ -11,3 +11,4 @@ torchvision==0.9.0+cpu
 starlette==0.12.0
 uvicorn==0.7.1
 python-multipart==0.0.5
+uvloop==0.15.2

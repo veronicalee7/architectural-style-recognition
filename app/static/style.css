@@ -3,7 +3,8 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: black;
+    color: white;
 }
 
 .no-display {
@@ -21,7 +22,7 @@ body {
     font-size: 36px;
     margin-top: 1em;
     margin-bottom: 1em;
-    color: #262626;
+    color: white;
 }
 
 .content {
@@ -51,7 +52,7 @@ button.choose-file-button {
     background-color: #ffffff;
     border: solid 1px #7052CB;
     font-size: 20px;
-    color: #7052CB;
+    color: #c4b7eb;
 }
 
 button.analyze-button {
@@ -61,7 +62,7 @@ button.analyze-button {
     border-radius: 4px;
     background-color: #7052CB;
     font-size: 20px;
-    color: #ffffff;
+    color: black;
 }
 
 button:focus {

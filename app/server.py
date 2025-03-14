@@ -9,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/file/d/1-ypX1TjaLKM1Q6Hn2KQgqY9puoRMQaCn/view?usp=sharing'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1-ypX1TjaLKM1Q6Hn2KQgqY9puoRMQaCn'
 export_file_name = 'export.pkl'
 
 classes = ['American craftsman style',

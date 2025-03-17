@@ -3,8 +3,8 @@
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .no-display {
@@ -49,10 +49,10 @@ button.choose-file-button {
     width: 220px;
     height: 50px;
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: #c4b7eb;
     border: solid 1px #7052CB;
     font-size: 20px;
-    color: #c4b7eb;
+    color: black;
 }
 
 button.analyze-button {
@@ -60,7 +60,7 @@ button.analyze-button {
     height: 50px;
     border: solid 1px #7052CB;
     border-radius: 4px;
-    background-color: #7052CB;
+    background-color: #c4b7eb;
     font-size: 20px;
     color: black;
 }

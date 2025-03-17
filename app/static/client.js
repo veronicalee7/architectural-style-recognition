@@ -14,6 +14,7 @@ function showPicked(input) {
   reader.readAsDataURL(input.files[0]);
 }
 
+
 function analyze() {
   var uploadFiles = el("file-input").files;
   if (uploadFiles.length !== 1) alert("Please select a file to analyze!");
@@ -30,6 +31,7 @@ function analyze() {
     if (this.readyState === 4) {
       var response = JSON.parse(e.target.responseText);
       el("result-label").innerHTML = `Result = ${response["result"]}`;
+      el("learn-more").innerHTML = "Learn More about this architecture style!"
     }
     el("analyze-button").innerHTML = "Analyze";
   };

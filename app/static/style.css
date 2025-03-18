@@ -22,7 +22,7 @@ body {
     font-size: 36px;
     margin-top: 1em;
     margin-bottom: 1em;
-    color: white;
+    color: black;
 }
 
 .content {
@@ -44,7 +44,11 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
-
+.learn-more{
+    margin-top: 0.5em;
+    padding: 5px;
+    font-size: 10px;
+}
 button.choose-file-button {
     width: 220px;
     height: 50px;

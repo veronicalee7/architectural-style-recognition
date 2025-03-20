@@ -41,7 +41,7 @@ function analyze() {
     if (this.readyState === 4) {
       var response = JSON.parse(e.target.responseText);
       el("result-label").innerHTML = `Result = ${response["result"]}`;
-      el("learn-more").innerHTML = "Learn More about this architecture style!"
+      el("learn-more").style.display = "inline-block";      
     }
     el("analyze-button").innerHTML = "Analyze";
   };

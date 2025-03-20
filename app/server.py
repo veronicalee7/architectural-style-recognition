@@ -87,6 +87,10 @@ async def analyze(request):
     prediction = learn.predict(img)[0]
     return JSONResponse({'result': str(prediction)})
 
+@app.route('/learn_more')
+async def learn_more(request):
+    html_file = path / 'view' / 'learn_more.html'
+    return HTMLResponse(html_file.open().read())
 
 if __name__ == '__main__':
     if 'serve' in sys.argv:

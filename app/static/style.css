@@ -11,6 +11,7 @@ body {
     display: none;
 }
 
+
 .center {
     margin: auto;
     padding: 10px 50px;
@@ -44,11 +45,18 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
-.learn-more{
-    margin-top: 0.5em;
-    padding: 5px;
-    font-size: 10px;
+
+.learn-more button {
+    width: 220px;
+    height: 50px;
+    border: solid 1px #7052CB;
+    border-radius: 4px;
+    background-color: #c4b7eb;
+    font-size: 20px;
+    color: black;
+    margin-top: 1em;
 }
+
 button.choose-file-button {
     width: 220px;
     height: 50px;

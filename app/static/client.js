@@ -18,7 +18,7 @@ function redirectToLearnMore() {
   const result = el("result-label").innerText.split("= ")[1]; 
   if (result) {
     const formattedStyle = result.toLowerCase().replace(/\s+/g, '-'); 
-    window.location.href = `/learn_more?style=${encodeURIComponent(formattedStyle)}`;
+    window.location.href = `/learn_more#${encodeURIComponent(formattedStyle)}`;
   } else {
     alert("No architecture style detected.");
   }

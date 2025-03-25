@@ -15,7 +15,6 @@ h2 {
   font-size: 30px;
 }
 img {
-  padding:3px;
   border-radius:10%;
 }
 .center {
@@ -55,7 +54,7 @@ img {
 
 .learn-more button {
     height: 50px;
-    border: solid 1px #7052CB;
+    border: 0px;
     border-radius: 4px;
     background-color: #eae6f5;
     font-size: 20px;
@@ -68,21 +67,28 @@ button.choose-file-button {
     height: 50px;
     border-radius: 4px;
     background-color: #c4b7eb;
-    border: solid 1px #7052CB;
+    border: 0px;
     font-size: 20px;
     color: black;
+}
+button.choose-file-button:hover {
+  background-color: #756099;
+  color: white;
 }
 
 button.analyze-button {
     width: 220px;
     height: 50px;
-    border: solid 1px #7052CB;
     border-radius: 4px;
     background-color: #c4b7eb;
+    border: 0px;
     font-size: 20px;
     color: black;
 }
-
+button.analyze-button:hover {
+  background-color: #756099;
+  color: white;
+}
 button:focus {
     outline: 0;
 }

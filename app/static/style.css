@@ -15,7 +15,8 @@ h2 {
   font-size: 30px;
 }
 img {
-  border-radius: 15%;
+  padding:3px;
+  border-radius:10%;
 }
 .center {
     margin: auto;

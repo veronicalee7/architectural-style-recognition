@@ -23,7 +23,9 @@ function redirectToLearnMore() {
     alert("No architecture style detected.");
   }
 }
-
+function classifypage(){
+   window.location.href = `/classify`;
+}
 
 function analyze() {
   var uploadFiles = el("file-input").files;

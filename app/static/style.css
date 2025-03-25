@@ -11,12 +11,15 @@ body {
     display: none;
 }
 
+h2 {
+  font-size: 30px;
+}
 
 .center {
     margin: auto;
     padding: 10px 50px;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .title {
@@ -28,6 +31,7 @@ body {
 
 .content {
     margin-top: 2em;
+    font-size: 20px;
 }
 
 .analyze {

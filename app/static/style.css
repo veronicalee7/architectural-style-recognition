@@ -14,7 +14,9 @@ body {
 h2 {
   font-size: 30px;
 }
-
+img {
+  border-radius: 15%;
+}
 .center {
     margin: auto;
     padding: 10px 50px;

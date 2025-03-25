@@ -29,6 +29,9 @@ function classifypage(){
 function explore(){
    window.location.href = `/learn_more`;
 }
+function explore(){
+   window.location.href = `/`;
+}
 
 function analyze() {
   var uploadFiles = el("file-input").files;

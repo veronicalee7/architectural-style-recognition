@@ -75,9 +75,12 @@ loop.close()
 
 @app.route('/')
 async def homepage(request):
+    html_file = path / 'view' / 'home.html'
+    return HTMLResponse(html_file.open().read())
+@app.route('/classify')
+async def classify(request):
     html_file = path / 'view' / 'index.html'
     return HTMLResponse(html_file.open().read())
-
 
 @app.route('/analyze', methods=['POST'])
 async def analyze(request):
@@ -91,6 +94,7 @@ async def analyze(request):
 async def learn_more(request):
     html_file = path / 'view' / 'learn_more.html'
     return HTMLResponse(html_file.open().read())
+ 
 
 if __name__ == '__main__':
     if 'serve' in sys.argv:

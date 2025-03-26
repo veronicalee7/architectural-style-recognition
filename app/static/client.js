@@ -29,7 +29,7 @@ function classifypage(){
 function explore(){
    window.location.href = `/learn_more`;
 }
-function explore(){
+function home(){
    window.location.href = `/`;
 }
 

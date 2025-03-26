@@ -10,7 +10,9 @@ body {
 .no-display {
     display: none;
 }
-
+h1{
+font-size: 50px;
+}
 h2 {
   font-size: 30px;
 }
@@ -96,7 +98,9 @@ button:focus {
 button:hover {
     cursor: pointer;
 }
-
+.table-of-contents{
+    color:#a8a7a8;
+}
 #list {
     font-size: 20px;
 }

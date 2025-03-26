@@ -1,10 +1,48 @@
 <html lang='en'>
     <head>
         <meta charset='utf-8'>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+<style>
+.topnav {
+  overflow: hidden;
+  background-color: transparent;
+  padding-top:20px;
+  padding-bottom:0px;
+  padding-right:30px;
+  position: sticky;
+  top: 0;
+}
+.topnav a {
+  float: right;
+  color: #a8a7a8;
+  text-align: center;
+  padding: 15px  50px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.topnav a:hover {
+  background-color: #c4b7eb;
+  color: white;
+  
+}
+hr.solid {
+  border-top: 3px solid #c4b7eb;
+}      
+ </style>
+        
         <link rel='stylesheet' href='../static/style.css'>
         <script src='../static/client.js'></script>
     </head>
     <body>
+        <div class="topnav">
+
+        <a onclick="explore()">Explore</a>
+        <a onclick="classifypage()">Classify</a>
+        <a onclick="home()">Home</a>
+<hr class="solid">
+</div>
         <div>
             <div class='center'>
                 <div class='title'>Classify Architecture Images</div>

@@ -1,30 +1,43 @@
-<html lang='en'>
+<!DOCTYPE html>
+<html>
     <head>
         <meta charset='utf-8'>
         <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
       <style>
       body {
-          font-family: 'DM Sans';font-size: 50px;
+          font-family: 'DM Sans';
+      }
+      .title{
+      font-size: 70px;
+          color: #5e5e5e;
+      }
+      table{
+      padding:0px;
+      border:0px;
       }
     img{
     float:right;
+    }
+    .sub{
+    font-size:27px;
+    color:#a8a7a8;
     }
 .topnav {
   overflow: hidden;
   background-color: transparent;
   padding-top:20px;
-  padding-bottom:20px;
+  padding-bottom:0px;
   padding-right:30px;
   position: sticky;
   top: 0;
 }
 .topnav a {
   float: right;
-  color: #c4b7eb;
+  color: #a8a7a8;
   text-align: center;
   padding: 15px  50px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
   border-radius: 50%;
 }
 
@@ -32,6 +45,9 @@
   background-color: #c4b7eb;
   color: white;
   
+}
+hr.solid {
+  border-top: 3px solid #c4b7eb;
 }
 
         
@@ -42,13 +58,23 @@
 
 
 <div class="topnav">
+
         <a href="learn_more.html">Explore</a>
         <a href="index.html">Classify</a>
         <a href="home.html">Home</a>
+<hr class="solid">
 </div>
-           
-<img src="https://github.com/veronicalee7/architectural-style-recognition/blob/master/app/view/bau1.jpg?raw=true" height="600" width="800">
-<br><br><br><br><br><br><br>
-Welcome to TASC.
+<table style=" float:right">
+  <tr>
+    <th style = "padding-right:60px;" class="title"><br><br><br>Analyze that<br> Architecture<br> — TASC!
+    <div class="sub">
+    Tee's Architectural Style Classifier :p
+    </div>
+    
+    </th>
+    <th  style = "padding-right:0px;"><img src="https://github.com/veronicalee7/architectural-style-recognition/blob/master/app/view/taschome.gif?raw=true" height="620"></th>
+  </tr>
+</table>
+
 </body>
 </html>

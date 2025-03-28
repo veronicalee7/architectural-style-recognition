@@ -162,6 +162,7 @@ details:hover {
 ul li {
     list-style: none;
     font-size: 1.5vw;
+    transform: translate(0%, -200%);
 }
     
 .hero-image {
@@ -176,12 +177,10 @@ ul li {
 }
 .hero-text {
   text-align: center;
-  position: absolute;
-  top: 30%;
+  position: relative;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -200%);
   z-index: 2;
-  opacity:100%;
   font-size: 3.3vw;
   color: white;
   background-color: rgba(194, 185, 209, 0.8);
@@ -208,12 +207,14 @@ ul li {
   <div class="hero-text">
 Classify Architecture Images
     </div>
+    
             <div class='center'>
+             <p style="font-size:1.5vw;  transform: translate(0%, -200%);">The following styles are valid within this website:</p>
            
                 <div id='list'>
-                    <p style="font-size:1.5vw;">Use images of the following list:</p>
+                   
                     <details style="font-size:1.5vw;">
-                        <summary>Architecture styles</summary>
+                        <summary style=" transform: translate(0%, -200%);">Architecture styles</summary>
                         <ul >
                             <li>American craftsman</li>
                             <li>Bauhaus</li>

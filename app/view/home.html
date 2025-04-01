@@ -11,17 +11,18 @@
           background-color: #f5f5f5;
       }
 
-      table{
-      padding:0px;
-      border:0px;
-      }
     img{
-  width: 100%;
+ width: 100%;
   height: auto;
+    grid-area: pic;
+    justify-content:center;
+    padding-right:0px;
     }
     .sub{
-    font-size:1.3vw;
+    font-size:20px;
     color: #999899;
+	font-weight:bold;  
+
     }
     
 .topnav {
@@ -32,6 +33,7 @@
   padding-right:30px;
   position: sticky;
   top: 0;
+    grid-area: header;
 }
 .topnav a {
   float: right;
@@ -39,11 +41,10 @@
   text-align: center;
   padding: 15px  50px;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 20px;
   border-radius: 50%;
   position: relative;
   display: inline-block;
-
   cursor: pointer;
   z-index: 0;
 }
@@ -70,22 +71,30 @@
   transition: transform 0.4s ease;
 }
 
-hr.solid {
+hr {
   border-top: 3px solid #a29bb2;
 }
+.below{
+    visibility: hidden;
+  }
 
-
+.intro{
+	grid-area:main;
+    text-align:center;
+     padding-right:30px;
+  padding-left:30px;
+}
 .shine-text {
   position: relative;
   display: inline-block;
-  font-size:4.5vw;
+  font-size:55px;
   overflow: hidden;
   background: #5e5e5e;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  padding-right:80px;
-          padding-left:90px;
+
+  font-weight:bold;
 }
 
 .shine-text::before {
@@ -116,6 +125,32 @@ hr.solid {
     left: 125%;
   }
 }
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'main pic';
+  gap: 10px;
+  padding: 10px;
+}
+@media only screen and (max-width: 650px) {
+  .topnav {grid-area: 1 / span 3;}
+  .intro {grid-area: 2 / span 3;}
+  img {grid-area: 3 / span 3;
+  padding-top:30px;}
+  .solid{
+    visibility: hidden;
+  }
+  .below{
+    visibility: visible;
+  }
+}
+@media only screen and (max-width: 577px) {
+  .topnav a { padding:20px 35px 20px 35px;}
+}
+@media only screen and (max-width: 500px) {
+  .topnav a { padding:20px 25px 20px 25px;}
+}
 
 
  </style>
@@ -123,29 +158,27 @@ hr.solid {
     </head>
 <body>
 
-
+<div class = "grid-container">
 <div class="topnav">
-
         <a onclick="explore()" class="menu">Explore</a>
         <a onclick="classifypage()" class="menu">Classify</a>
         <a onclick="home()" class="menu">Home</a>
 <hr class="solid">
 </div>
-<table style="float:right;">
-  <tr>
-    <th style="vertical-align: top;">
+<div class="intro">
+<hr class="below">
+
       <div class="shine-wrapper">
         <span class="shine-text">Analyze that<br> Architecture<br> — TASC!</span>
       </div>
       <div class="sub">
         Tee's Architectural Style Classifier :p
       </div>
-    </th>
-    <th style="padding-right:0px; vertical-align: top;">
+     </div>
+   
       <img class="gif" src="https://github.com/veronicalee7/architectural-style-recognition/blob/master/app/view/taschome.gif?raw=true" width="600" height="600">
-    </th>
-  </tr>
-</table>
 
+
+</div>
 </body>
 </html>

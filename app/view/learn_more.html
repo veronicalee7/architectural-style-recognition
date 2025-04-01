@@ -6,6 +6,7 @@
      <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
 <style>
     
+    
 .topnav {
   overflow: hidden;
   background-color: transparent;
@@ -14,6 +15,7 @@
   padding-right:30px;
   position: sticky;
   top: 0;
+    grid-area: header;
 }
 .topnav a {
   float: right;
@@ -21,11 +23,10 @@
   text-align: center;
   padding: 15px  50px;
   text-decoration: none;
-  font-size: 1.5vw;
+  font-size: 20px;
   border-radius: 50%;
   position: relative;
   display: inline-block;
-
   cursor: pointer;
   z-index: 0;
 }
@@ -52,10 +53,12 @@
   transition: transform 0.4s ease;
 }
 
-hr.solid {
+hr {
   border-top: 3px solid #a29bb2;
 }
-
+.below{
+    visibility: hidden;
+  }
 
 * {
     font-family: 'DM Sans';
@@ -70,7 +73,7 @@ body {
     display: none;
 }
 h1{
-font-size: 50px;
+font-size: 40px;
 }
 h2 {
   font-size: 30px;
@@ -199,6 +202,17 @@ ul li {
         margin: 0px -250px 0px -250px;
         opacity: 0.75;
     }
+    @media only screen and (max-width: 630px) {
+  .solid{
+    visibility: hidden;
+  }
+  }
+  @media only screen and (max-width: 557px) {
+  .topnav a { padding:20px 35px 20px 35px;}
+  }
+  @media only screen and (max-width: 477px) {
+  .topnav a { padding:20px 25px 20px 25px;}
+}
  </style>
     
     
@@ -216,7 +230,7 @@ ul li {
 </div>
     <div class="center">
         <h1>Learn More About Architecture Styles</h1> 
-        <hr class="solid" style ="width:60%;"><br>
+        <hr style ="width:60%;"><br>
 
         <div id="table-of-contents">
              <details>
